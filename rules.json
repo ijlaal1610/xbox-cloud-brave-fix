@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        { "header": "sec-ch-ua", "operation": "remove" },
+        { "header": "sec-ch-ua-mobile", "operation": "remove" },
+        { "header": "sec-ch-ua-platform", "operation": "remove" }
+      ]
+    },
+    "condition": {
+      "urlFilter": "||play.xbox.com",
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame",
+        "xmlhttprequest",
+        "script",
+        "other"
+      ]
+    }
+  }
+]
